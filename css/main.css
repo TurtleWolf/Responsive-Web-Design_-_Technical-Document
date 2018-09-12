@@ -48,9 +48,7 @@ section{
   .container {
     display: inline; /* or inline-flex */
     } /* end of container (display:flex) */
-  body{
-    overflow:  scroll;
-  }
+
 section{
   margin-top: 0px;
   padding: 2%;
