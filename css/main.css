@@ -1,0 +1,63 @@
+* {
+ box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ position: relative;
+ overflow: hidden;
+ background: url(https://github.com/TurtleWolf/Responsive-Web-Design_-_Product-Landing-Page/blob/master/paperCRUMPLED.jpg?raw=true) no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover; 
+}
+footer {
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+  background: url(https://github.com/TurtleWolf/Responsive-Web-Design_-_Technical-Document/blob/master/800px-Joy_Oil_gas_station_blueprints.jpg) no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover; 
+}
+#nav-bar {  
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.9;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+     }/* navbar in media query */
+section{
+  margin-top: 65px; 
+  padding: 2%;
+  border: 4mm ridge rgb(333, 333, 333, .6);
+} 
+.container {
+  display: flex; /* or inline-flex */
+  } /* end of container (display:flex) */
+
+@media (max-width: 1250px) {
+      /* @media (width <= 30em) {....}  */
+      /* Move nav bar to top of page */
+  .container {
+    display: inline; /* or inline-flex */
+    } /* end of container (display:flex) */
+  body{
+    overflow:  scroll;
+  }
+section{
+  margin-top: 0px;
+  padding: 2%;
+  border: 4mm ridge rgb(333, 333, 333, .6);
+} 
+  #Natural{
+    margin-top: 65px; 
+  } 
+} /* end of media query 1250px */
