@@ -7,6 +7,8 @@
 }
 html,
 body {
+ color: yellow; 
+ text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
  height: 100%;
  position: relative;
  background: url(https://github.com/TurtleWolf/Responsive-Web-Design_-_Technical-Document/blob/master/800px-Joy_Oil_gas_station_blueprints.jpg?raw=true) no-repeat center center fixed; 
@@ -15,46 +17,68 @@ body {
  -o-background-size: cover;
  background-size: cover; 
 }
+a {
+ color: yellow; 
+ text-shadow: 4px 4px 10px rgba(0, 0, 0, 1); 
+}
+#backColor-container {
+  background-color: rgba(0, 0, 100, 0.6);
+}
+#head-container {
+    display: flex;
+    flex-direction: reverse;
+}
+#navbar {  
+    width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+     }/* navbar */
+header {
+  width: 70%;
+  font-size: 2.5em;
+  text-align: right;
+  float: right;
+  margin-right: 5%;
+  }
+#main-doc{
+  margin-top: 20%;
+  margin-left:8%;
+  width: 55%;
+  border: double #32a1ce;
+  padding: 4%;
+  } 
+section{
+  margin-top: 25px; 
+  padding: 2%;
+  border: 2mm ridge rgb(333, 333, 333, .6);
+  background-color: #AD66D5;
+  font-size: 1.3em;
+  text-align: justify;
+  -webkit-box-shadow: inset 10px 10px 72px 3px rgba(0,0,0,0.6);
+-moz-box-shadow: inset 10px 10px 72px 3px rgba(0,0,0,0.6);
+box-shadow: inset 10px 10px 72px 3px rgba(0,0,0,0.6);
+  background-color: #1565C0;
+  font: 'Open Sans';
+} 
+code {
+  background-color: #1565C0;
+  font: Inconsolata;
+  color: white;
+}
+@media (max-width: 1250px) {
+      /* @media (width <= 30em) {....}  */
+  section{
+  margin-top: 15px;
+  border: 1mm ridge rgb(333, 333, 333, .6);
+} 
+} /* end of media query 1250px */
 footer {
  position: fixed;
  bottom: 0;
  width: 100%;
-  background: url(https://github.com/TurtleWolf/Responsive-Web-Design_-_Technical-Document/blob/master/800px-Joy_Oil_gas_station_blueprints.jpg) no-repeat center center fixed; 
+  background: url(https://github.com/TurtleWolf/Responsive-Web-Design_-_Technical-Document/blob/master/800px-Joy_Oil_gas_station_blueprints.jpg?raw=true) no-repeat center center fixed; 
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover; 
 }
-#nav-bar {  
-    overflow: hidden;
-    background-color: #333;
-    opacity: 0.9;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-     }/* navbar in media query */
-section{
-  margin-top: 65px; 
-  padding: 2%;
-  border: 4mm ridge rgb(333, 333, 333, .6);
-} 
-.container {
-  display: flex; /* or inline-flex */
-  } /* end of container (display:flex) */
-
-@media (max-width: 1250px) {
-      /* @media (width <= 30em) {....}  */
-      /* Move nav bar to top of page */
-  .container {
-    display: inline; /* or inline-flex */
-    } /* end of container (display:flex) */
-
-section{
-  margin-top: 0px;
-  padding: 2%;
-  border: 4mm ridge rgb(333, 333, 333, .6);
-} 
-  #Natural{
-    margin-top: 65px; 
-  } 
-} /* end of media query 1250px */
